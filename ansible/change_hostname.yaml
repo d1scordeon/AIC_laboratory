@@ -1,0 +1,7 @@
+---
+- hosts: servers
+  user: kiddo
+  become: true
+  tasks:
+    - name: Change the hostname
+      command: hostnamectl set-hostname kateryna-bakhmat-lab2
